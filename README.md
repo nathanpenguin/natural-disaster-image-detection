@@ -43,15 +43,30 @@ Details in "Running the Project"
    
 9. From inside the Docker container, change directories so you are in jetson-inference/python/training/classification
   
-10. Run the training script to train the network where the model-dir argument is where the model should be saved and where the data is.  You should immediately start to see output, but it will take a very long time to finish running. Fill in the square bracket with their respective values.
+10. Run the training script to train the network where the model-dir argument is what the name of the folder containing the training data.  You should immediately start to see output, but it will take a very long time to finish running. Fill in the square bracket with their respective values.
 ```
-python3 train.py --model-dir=models/[Where the model should be saved] data/[Where the data is]
+python3 train.py --model-dir=models/Name of model] data/[Name of the folder containing the data]
 ```
 11. In order to convert the model into ONNX format navigate to jetson-inference/python/training/classification
     Then run:
     ```
-    python3 onnx_export.py --model-dir=models/[Wh-+
+    python3 onnx_export.py --model-dir=models/[Name of model]
     ]
     ```
-13. 
-14. 
+    Look in jetson-inference/python/training/classification/models/cat_dog. There should be a new model called resnet18.onnx there.
+    
+12. Exit the docker and ensure you are in jetson-inference/python/training/classification.
+    
+13. Set the NET and DATASET variables.
+    ```
+    NET=models/[Name of model]
+    ```
+    ```
+    DATASET=data/[Name of the folder containing the data]
+    ```
+
+14. The model is trained! Run this script and fill in the appropriate values to classify.
+    ```
+    imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/[Disaster Folder (Cyclone, Flood, or Wildfire)]/[Image Name] [New classified image output name]
+    ```
+15. You are done! Congrats! Find the new classified image output to veiw what it's classified as.
