@@ -20,15 +20,23 @@ Details in "Running the Project"
 
 ## Running the Project
 
-1. Download the jetson-inference folder
+1. Download the jetson-inference folder.
    
-   Tutorial [here](https://github.com/dusty-nv/jetson-inference/blob/master/docs/building-repo-2.md)
+   Tutorial [here](https://github.com/dusty-nv/jetson-inference/blob/master/docs/building-repo-2.md).
   
 2. Download the dataset [here](https://drive.google.com/drive/folders/1gil1saB-UyT2ouvr6iMxMlpPk0Utjh1e). Make sure to download the whole 'data' folder.
-   Place it in the jetson-inference/python/training/classification/data
+   Place it in the jetson-inference/python/training/classification/data.
 
 3. Download the model [here](https://drive.google.com/drive/folders/1OtcPVJD0MdpkANUtxtMmdgYUAS7yiNwh).
-   Place it in jetson-inference/python/training/classification/models
+   Place it in jetson-inference/python/training/classification/models.
 
-4. 
+5. Delete the imagenet.py file in jetson-inference/build/aarch64/bin.
    
+6. Download the modified imagenet.py file fro this GitHub and use it to replace the deleted one.
+
+7. Navagate to the jetson-inference folder.
+   Run $./docker/run.sh to run the docker container.  
+8. 
+9. 
+10. 
+11. 
