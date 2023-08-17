@@ -70,4 +70,4 @@ python3 train.py --model-dir=models/[Name of model] data/[Name of the folder con
     ```
 15. You are done! Congrats! Find the new classified image output to veiw what it's classified as.
 
-[Veiw a video explanation here](https://youtu.be/ajx-aZpzgL4)
+[Veiw a video explanation here](https://youtu.be/ajx-aZpzgL4) Make sure to download all the required things (above) before watching.
