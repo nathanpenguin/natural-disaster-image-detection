@@ -24,7 +24,7 @@ Details in "Running the Project"
    
    Tutorial [here](https://github.com/dusty-nv/jetson-inference/blob/master/docs/building-repo-2.md).
   
-2. Download the dataset [here](https://drive.google.com/drive/folders/1h8mIcIa4pJe-525j2IODdFiykC4uFFDp?usp=sharing). Make sure to download the whole 'data' folder.
+2. Download the dataset [here](https://drive.google.com/drive/folders/1sVvlYAXBHxl7M5xPIkre5mNvklRZk-Al?usp=sharing). Make sure to download the whole 'data' folder.
    Place it in the jetson-inference/python/training/classification/data. I already split it for you!
 
 5. Delete the imagenet.py file in jetson-inference/build/aarch64/bin.
