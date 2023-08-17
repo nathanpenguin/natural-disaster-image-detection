@@ -67,6 +67,6 @@ python3 train.py --model-dir=models/Name of model] data/[Name of the folder cont
 
 14. The model is trained! Run this script and fill in the appropriate values to classify.
     ```
-    imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/[Disaster Folder (Cyclone, Flood, or Wildfire)]/[Image Name] [New classified image output name]
+    python3 /home/nvidia/jetson-inference/python/training/classification/imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/[Disaster Folder (Cyclone, Flood, or Wildfire)]/[Image Name] [New classified image output name]
     ```
 15. You are done! Congrats! Find the new classified image output to veiw what it's classified as.
