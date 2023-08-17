@@ -2,7 +2,7 @@
   A program running on resNet-18 designed to detect whether an image contains a cyclone, flood or wildfire. 
 
   Based on the image that is provided, after completing the project, the given image is classified into one of these classes.
-This project can be used in remote and underpopulated areas to alert special services and the locals in adavnce about the presence of a cyclone, flood, or wildfire. This is extremly vital to first responders; giving them advance warning about events, allowing them to save more lives. It is important for us the recognize and identify natural disasters.
+This project can be used in remote and underpopulated areas to alert special services and the locals in adavance about the presence of a cyclone, flood, or wildfire. This is extremly vital to first responders; giving them advance warning about events, allowing them to save more lives. It is important for us the recognize and identify natural disasters.
 
 An example of when a cyclone is sent: [Click here](https://imgur.com/a/79i7hYI)
 
