@@ -45,7 +45,7 @@ Details in "Running the Project"
   
 10. Run the training script to train the network where the model-dir argument is what the name of the folder containing the training data.  You should immediately start to see output, but it will take a very long time to finish running. Fill in the square bracket with their respective values.
 ```
-python3 train.py --model-dir=models/Name of model] data/[Name of the folder containing the data]
+python3 train.py --model-dir=models/[Name of model] data/[Name of the folder containing the data]
 ```
 11. In order to convert the model into ONNX format navigate to jetson-inference/python/training/classification
     Then run:
