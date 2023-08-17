@@ -81,7 +81,7 @@ while True:
         print(f"imagenet:  {confidence:05.2f}% class #{classID} ({labels[classID]})")
 
         font.OverlayText(img, text=f"{confidence:05.2f}% {labels[classID]}", 
-                         x=5, y=5 + n * (font.GetSize() + 20),
+                         x=5, y=5 + n * (font.GetSize() + 30),
                          color=font.White, background=font.Gray40)
                          
     # render the image
