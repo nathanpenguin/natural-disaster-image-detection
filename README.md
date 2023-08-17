@@ -32,11 +32,26 @@ Details in "Running the Project"
 
 5. Delete the imagenet.py file in jetson-inference/build/aarch64/bin.
    
-6. Download the modified imagenet.py file fro this GitHub and use it to replace the deleted one.
+6. Download the modified imagenet.py file from this GitHub and use it to replace the deleted one.
 
 7. Navagate to the jetson-inference folder.
-   Run $./docker/run.sh to run the docker container.  
-8. 
-9. 
-10. 
-11. 
+   Run:
+   ```
+   $ ./docker/run.sh
+   ```
+   to run the docker container.
+   
+9. From inside the Docker container, change directories so you are in jetson-inference/python/training/classification
+  
+10. Run the training script to train the network where the model-dir argument is where the model should be saved and where the data is.  You should immediately start to see output, but it will take a very long time to finish running. Fill in the square bracket with their respective values.
+```
+python3 train.py --model-dir=models/[Where the model should be saved] data/[Where the data is]
+```
+11. In order to convert the model into ONNX format navigate to jetson-inference/python/training/classification
+    Then run:
+    ```
+    python3 onnx_export.py --model-dir=models/[Wh-+
+    ]
+    ```
+13. 
+14. 
