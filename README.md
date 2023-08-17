@@ -24,5 +24,11 @@ Details in "Running the Project"
    
    Tutorial [here](https://github.com/dusty-nv/jetson-inference/blob/master/docs/building-repo-2.md)
   
-2. Download the dataset [here](https://drive.google.com/drive/folders/1gil1saB-UyT2ouvr6iMxMlpPk0Utjh1e)
+2. Download the dataset [here](https://drive.google.com/drive/folders/1gil1saB-UyT2ouvr6iMxMlpPk0Utjh1e). Make sure to download the whole 'data' folder.
+   Place it in the jetson-inference/python/training/classification/data
+
+3. Download the model [here](https://drive.google.com/drive/folders/1OtcPVJD0MdpkANUtxtMmdgYUAS7yiNwh)
+   Place it in jetson-inference/python/training/classification/models
+
+4. 
    
