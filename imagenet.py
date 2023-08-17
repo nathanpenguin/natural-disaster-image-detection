@@ -56,7 +56,7 @@ net = imageNet(args.network, sys.argv)
 # create video sources & outputs
 input = videoSource(args.input, argv=sys.argv)
 output = videoOutput(args.output, argv=sys.argv)
-font = cudaFont()
+font = cudaFont(size=32)
 
 # process frames until EOS or the user exits
 while True:
@@ -81,7 +81,7 @@ while True:
         print(f"imagenet:  {confidence:05.2f}% class #{classID} ({labels[classID]})")
 
         font.OverlayText(img, text=f"{confidence:05.2f}% {labels[classID]}", 
-                         x=5, y=5 + n * (font.GetSize() + 30),
+                         x=5, y=5 + n * (font.GetSize() + 10),
                          color=font.White, background=font.Gray40)
                          
     # render the image
