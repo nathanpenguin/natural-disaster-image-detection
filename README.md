@@ -52,7 +52,7 @@ python3 train.py --model-dir=models/[Name of model] data/[Name of the folder con
     ```
     python3 onnx_export.py --model-dir=models/[Name of model]
     ```
-    Look in jetson-inference/python/training/classification/models/cat_dog. There should be a new model called resnet18.onnx there.
+    Look in jetson-inference/python/training/classification/models/[Name of model]. There should be a new model called resnet18.onnx there.
     
 12. Exit the docker and ensure you are in jetson-inference/python/training/classification.
     
